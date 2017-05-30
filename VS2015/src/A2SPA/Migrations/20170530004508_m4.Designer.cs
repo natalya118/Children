@@ -8,9 +8,10 @@ using A2SPA.Data;
 namespace A2SPA.Migrations
 {
     [DbContext(typeof(A2spaContext))]
-    partial class A2spaContextModelSnapshot : ModelSnapshot
+    [Migration("20170530004508_m4")]
+    partial class m4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")

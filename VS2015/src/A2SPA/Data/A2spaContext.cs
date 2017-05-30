@@ -12,10 +12,12 @@ namespace A2SPA.Data
         }
 
         public DbSet<TestData> TestData { get; set; }
-
+        public DbSet<House> House { get; set; }
+        public DbSet<Child> Child { get; set; }
+        public DbSet<Need> Need { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TestData>().ToTable("TestData");
+            //modelBuilder.Entity<TestData>().ToTable("TestData");
             base.OnModelCreating(modelBuilder);
         }
     }
